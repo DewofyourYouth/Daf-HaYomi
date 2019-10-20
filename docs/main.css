@@ -1,11 +1,12 @@
 body {
-    background-color: #eee;
+    background-color: rgb(134, 134, 134);
 }
 
-.videoItem  {
+.videoItem, header  {
     width: 560px;
     margin: 0 auto;
     text-align: center;
     font-family: sans-serif;
     padding: 20px;
+    background-color: #fff;
 }
