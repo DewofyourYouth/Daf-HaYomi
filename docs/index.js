@@ -16,7 +16,7 @@ fetch(url)
             <a href="${vidLink}">
                 <img src="${element.snippet.thumbnails.medium.url}">
             </a>   
-            <p>
+            <p style="white-space: pre-line;">
             ${element.snippet.description}
             </p>
         </div>
