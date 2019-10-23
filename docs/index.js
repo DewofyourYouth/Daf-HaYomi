@@ -9,6 +9,7 @@ fetch(url)
   })
   .then(data => {
     console.log(data)
+    data.items.reverse()
     data.items.forEach(element => {
         let vidLink = `https://www.youtube.com/watch?v=${element.snippet.resourceId.videoId}`
         document.getElementById('videos').innerHTML += `
