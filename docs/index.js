@@ -1,11 +1,14 @@
-// Replace ./data.json with your JSON feed
-const url = 'https://www.googleapis.com/youtube/v3/playlistItems?part=id%2C%20snippet&playlistId=PLmZ5cJ593tKsQfinFg_OKSHIVmmyySNJA&maxResults=15&order=date&key=AIzaSyDnXgwCxGMeIRDsXamctNG8YnzLmSEUgpU'
+const playlistId = 'PLmZ5cJ593tKsQfinFg_OKSHIVmmyySNJA'
+const key = 'AIzaSyDnXgwCxGMeIRDsXamctNG8YnzLmSEUgpU'
+const maxResults = 15
+const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=id%2Csnippet&playlistId=${playlistId}&maxResults=${maxResults}&key=${key}`
+
 fetch(url)
   .then(response => {
     return response.json()
   })
   .then(data => {
-    // Work with JSON data here
+    console.log(data)
     data.items.forEach(element => {
         let vidLink = `https://www.youtube.com/watch?v=${element.snippet.resourceId.videoId}`
         document.getElementById('videos').innerHTML += `
