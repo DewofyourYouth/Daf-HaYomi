@@ -1,3 +1,3 @@
 # Daf HaYomi
 
-[Demo](https://dewofyouryouth.github.io/Daf-HaYomi/) Here
+[Page Here](https://dewofyouryouth.github.io/Daf-HaYomi/)
